@@ -1,0 +1,305 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #0a1f44;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #f7c948;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero-finance.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+.btn {
+  background-color: #f7c948;
+  color: #0a1f44;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #eab308;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 50px;
+  background-color: #f0f4f8;
+}
+
+.about-content {
+  width: 50%;
+}
+
+.about-content h2 {
+  color: #0a1f44;
+}
+
+.about-content p {
+  line-height: 1.6;
+}
+
+.about-image img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+/* Services */
+.menu {
+  background-color: #fff;
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.menu h2 {
+  color: #0a1f44;
+  margin-bottom: 40px;
+}
+
+.menu-items {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  width: 300px;
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.menu-item h3 {
+  color: #0a1f44;
+  margin-top: 15px;
+}
+
+/* Consultation Form */
+.reservations {
+  background-color: #e5eaf5;
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.reservation-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.reservation-form form input,
+.reservation-form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.reservation-form form button {
+  background-color: #0a1f44;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reservation-form form button:hover {
+  background-color: #f7c948;
+  color: #0a1f44;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #fff;
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.testimonial {
+  max-width: 500px;
+  margin: 20px auto;
+  font-style: italic;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #f0f4f8;
+  padding: 60px 50px;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.info-item {
+  margin: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #0a1f44;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #f7c948;
+  color: #0a1f44;
+}
+
+/* Footer */
+.footer {
+  background-color: #0a1f44;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #f7c948;
+}
+
+.footer-social a {
+  color: white;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.footer-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.founder-section {
+  background-color: #ffffff;
+  padding: 60px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.founder-container {
+  display: flex;
+  max-width: 1000px;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.founder-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.founder-info {
+  flex: 1;
+}
+
+.founder-info h2 {
+  color: #0a1f44;
+  margin-bottom: 15px;
+}
+
+.founder-info p {
+  line-height: 1.6;
+  font-size: 1.05em;
+}
