@@ -21,7 +21,7 @@
     </nav>
   </header>
 
-  <section class="hero" id="home">
+  <section class="hero fade-on-scroll" id="home">
     <div class="hero-content">
       <h1>Welcome to Finovo</h1>
       <p>Empowering Your Financial Future</p>
@@ -29,7 +29,7 @@
     </div>
   </section>
 
-  <section class="about dark-theme" id="about">
+  <section class="about dark-theme fade-on-scroll" id="about">
     <div class="about-content">
       <h2>About Finovo</h2>
       <p>At Finovo, we provide expert financial guidance tailored to your goals. Whether you're planning for retirement, investing for growth, or protecting your legacy, we're here to help.</p>
@@ -42,7 +42,7 @@
   </section>
 
   <!-- Founder Section Start -->
-  <section class="founder-section">
+  <section class="founder-section fade-on-scroll">
     <div class="founder-container">
       <div class="founder-image">
         <img src="founder.jpg" alt="Founder of Finovo">
@@ -55,7 +55,7 @@
   </section>
   <!-- Founder Section End -->
 
-  <section class="menu" id="services">
+  <section class="menu fade-on-scroll" id="services">
     <h2>Our Services</h2>
     <div class="menu-items">
       <div class="menu-item">
@@ -76,7 +76,7 @@
     </div>
   </section>
 
-  <section class="reservations" id="consultation">
+  <section class="reservations fade-on-scroll" id="consultation">
     <div class="reservation-form">
       <h2>Book a Free Consultation</h2>
       <form>
@@ -91,7 +91,7 @@
     </div>
   </section>
 
-  <section class="testimonials">
+  <section class="testimonials fade-on-scroll">
     <h2>What Our Clients Say</h2>
     <div class="testimonial">
       <img src="client1.jpg" alt="Client 1">
@@ -105,7 +105,7 @@
     </div>
   </section>
 
-  <section class="contact" id="contact">
+  <section class="contact fade-on-scroll" id="contact">
     <div class="contact-container">
       <h2>Contact Us</h2>
       <div class="contact-info">
@@ -152,6 +152,19 @@
     </div>
     <p class="footer-text">&copy; 2025 Finovo. All rights reserved.</p>
   </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fadeInUp');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-on-scroll').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
-
