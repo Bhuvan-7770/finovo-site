@@ -3,6 +3,11 @@
 <head>
   <title>Finovo - Wealth Management</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body>
@@ -41,7 +46,6 @@
     </div>
   </section>
 
-  <!-- Founder Section Start -->
   <section class="founder-section fade-on-scroll">
     <div class="founder-container">
       <div class="founder-image">
@@ -53,7 +57,6 @@
       </div>
     </div>
   </section>
-  <!-- Founder Section End -->
 
   <section class="menu fade-on-scroll" id="services">
     <h2>Our Services</h2>
@@ -153,7 +156,7 @@
     <p class="footer-text">&copy; 2025 Finovo. All rights reserved.</p>
   </footer>
 
-  <!-- Scroll Animation Script -->
+  <!-- Scroll-triggered Animation Script -->
   <script>
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
